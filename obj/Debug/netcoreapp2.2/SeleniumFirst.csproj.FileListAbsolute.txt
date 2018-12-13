@@ -1,0 +1,11 @@
+/Users/cliff/Desktop/SeleniumFirst/bin/Debug/netcoreapp2.2/SeleniumFirst.deps.json
+/Users/cliff/Desktop/SeleniumFirst/bin/Debug/netcoreapp2.2/SeleniumFirst.runtimeconfig.json
+/Users/cliff/Desktop/SeleniumFirst/bin/Debug/netcoreapp2.2/SeleniumFirst.runtimeconfig.dev.json
+/Users/cliff/Desktop/SeleniumFirst/bin/Debug/netcoreapp2.2/SeleniumFirst.dll
+/Users/cliff/Desktop/SeleniumFirst/bin/Debug/netcoreapp2.2/SeleniumFirst.pdb
+/Users/cliff/Desktop/SeleniumFirst/obj/Debug/netcoreapp2.2/SeleniumFirst.csprojAssemblyReference.cache
+/Users/cliff/Desktop/SeleniumFirst/obj/Debug/netcoreapp2.2/SeleniumFirst.csproj.CoreCompileInputs.cache
+/Users/cliff/Desktop/SeleniumFirst/obj/Debug/netcoreapp2.2/SeleniumFirst.AssemblyInfoInputs.cache
+/Users/cliff/Desktop/SeleniumFirst/obj/Debug/netcoreapp2.2/SeleniumFirst.AssemblyInfo.cs
+/Users/cliff/Desktop/SeleniumFirst/obj/Debug/netcoreapp2.2/SeleniumFirst.dll
+/Users/cliff/Desktop/SeleniumFirst/obj/Debug/netcoreapp2.2/SeleniumFirst.pdb
