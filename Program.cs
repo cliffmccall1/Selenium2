@@ -9,41 +9,37 @@ namespace SeleniumFirst {
         static void Main (string[] args) {
 
             string pathToDriver = "/Users/cliff/Desktop/SeleniumFirst/assets/";
-
-            Console.WriteLine ("We are starting");
             // Create the reference for browser
             IWebDriver driver = new ChromeDriver (pathToDriver);
+            Console.WriteLine ("We are starting");
 
             // Navigate to Test Site
             driver.Navigate ().GoToUrl ("http://www.executeautomation.com/demosite/index.html?UserName=&Password=&Login=Login");
             Console.WriteLine ("Browser Opened");
 
-            // Title
-            SeleniumSetMethods.SelectDropDown (driver, "TitleId", "Ms.", "Id");
-            Thread.Sleep (500);
-            Console.WriteLine ("Initial Complete");
+            // Select Title
+            SeleniumSetMethods.SelectDropDown (driver, "TitleId", "Mr.", "Id");
+            // Verify Selection
+            Console.WriteLine ("Title value is: " + SeleniumGetMethods.GetFromDropDown (driver, "TitleId", "Id"));
 
-            // Initial
-            SeleniumSetMethods.EnterText (driver, "Initial", "PBJ", "Name");
-            Thread.Sleep (500);
-            Console.WriteLine ("Initial Complete");
+            // Enter Initial
+            SeleniumSetMethods.EnterText (driver, "Initial", "JH", "Name");
+            // Verify Text Entered
+            Console.WriteLine ("Initial value is: " + SeleniumGetMethods.GetText (driver, "Initial", "Name"));
 
-            // First Name
-            SeleniumSetMethods.EnterText (driver, "FirstName", "Pam", "Name");
-            Thread.Sleep (500);
-            Console.WriteLine ("FirstName Complete");
+            // Enter First Name
+            SeleniumSetMethods.EnterText (driver, "FirstName", "Jim", "Name");
+            // Verify Text Entered
+            Console.WriteLine ("FirstName value is: " + SeleniumGetMethods.GetText (driver, "FirstName", "Name"));
 
-            // Middle Name
-            SeleniumSetMethods.EnterText (driver, "MiddleName", "Beasley", "Name");
-            Thread.Sleep (500);
-            Console.WriteLine ("MiddleName Complete");
+            // Enter Middle Name
+            SeleniumSetMethods.EnterText (driver, "MiddleName", "Halpert", "Name");
+            // Verify Text Entered
+            Console.WriteLine ("MiddleName value is: " + SeleniumGetMethods.GetText (driver, "MiddleName", "Name"));
 
             // Click
             SeleniumSetMethods.Click (driver, "Save", "Name");
-            Thread.Sleep (1000);
-            Console.WriteLine ("Click Complete");
             // Close Chrome
-            Thread.Sleep (3000);
             driver.Close ();
             Console.WriteLine ("Browser Closed");
 
